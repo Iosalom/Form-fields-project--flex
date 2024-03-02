@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: #dddddd;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+
+  transition: 0.3s ease-in;
+}
+main .top-content-styles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s ease-in;
+}
+main .top-content-styles h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+
+  transition: 0.3s ease-in;
+}
+main .top-content-styles input {
+  width: 1000px;
+  justify-content: end;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  font-style: italic;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  border-bottom: 3px solid black;
+
+  background: #dddddd;
+  transition: 0.3s ease-in;
+}
+main .top-content-styles input,
+main .top-content-styles button {
+  margin-top: 40px;
+
+  transition: 0.3s ease-in;
+}
+main div .btn-div-styles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s ease-in;
+}
+main div .btn-div-styles button {
+  width: 240px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  color: #dddddd;
+  background: #000;
+  cursor: pointer;
+
+  transition: 0.3s ease-out;
+}
+main div .btn-div-styles button:hover {
+  background: #212121;
+  transition: 0.3s ease-in;
+}
+main div .btn-div-styles button:active {
+  background: #212121c7;
+  transition: 0.3s ease-in;
+}
+
+section {
+  margin-top: 100px;
+  display: flex;
+  font-family: sans-serif;
+
+  transition: 0.3s ease-in;
+}
+section div {
+  display: flex;
+
+  transition: 0.3s ease-in;
+}
+section div div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+
+  transition: 0.3s ease-in;
+}
+section div p,
+section div h3 {
+  text-align: center;
+
+  transition: 0.3s ease-in;
+}
+section div i {
+  font-size: 40px;
+  color: #5e5e5e;
+  font-weight: 400;
+
+  transition: 0.3s ease-in;
+}
+section div h3 {
+  margin-top: 20px;
+  color: #1f1f1f;
+  font-weight: 600;
+
+  transition: 0.3s ease-in;
+}
+section div p {
+  margin-top: 10px;
+  color: #5e5e5e;
+  font-weight: 400;
+
+  transition: 0.3s ease-in;
+}
+
+/* For phone sizes devices where sceen take more like vertical looking, weather than horizontal */
+@media (max-width: 1404px) {
+  main {
+    margin-top: 100px;
+  }
+  main .top-content-styles h2 {
+    font-size: 32px;
+  }
+  main .top-content-styles input {
+    width: 800px;
+    height: 32px;
+    font-size: 16px;
+  }
+  main .top-content-styles input,
+  main .top-content-styles button {
+    margin-top: 40px;
+  }
+  main div .btn-div-styles button {
+    width: 192px;
+    height: 48px;
+    font-size: 16px;
+  }
+  section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+  }
+  section div {
+    display: flex;
+    margin-top: 25px;
+  }
+  section div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  section div div p:nth-child(1) {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 962px) {
+  main .top-content-styles h2 {
+    font-size: 26px;
+  }
+  main .top-content-styles input {
+    width: 500px;
+    height: 32px;
+    font-size: 16px;
+  }
+  main .top-content-styles button {
+    margin-top: 40px;
+  }
+  main {
+    margin-top: 100px;
+  }
+  section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+  }
+  section div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  section div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+  }
+  section div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  section div div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 594px) {
+  main .top-content-styles h2 {
+    font-size: 20px;
+  }
+  main .top-content-styles input {
+    width: 350px;
+    height: 32px;
+    font-size: 16px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+  }
+  section div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  section div div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 496px) {
+  main .top-content-styles h2 {
+    font-size: 16px;
+  }
+  main .top-content-styles input {
+    width: 300px;
+    height: 32px;
+    font-size: 16px;
+  }
+  main {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 406px) {
+  main .top-content-styles h2 {
+    font-size: 16px;
+  }
+  main .top-content-styles input {
+    width: 300px;
+    height: 32px;
+    font-size: 16px;
+  }
+  main {
+    margin-top: 100px;
+  }
+}
